@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Pomodoro Project</title>
+  </head>
+  <body>
+    <div id="page">
+      <div class="buttons">
+        <button class="start-bttn">
+          <i class="fa-solid fa-circle-play"></i>
+        </button>
+        <button class="stop-bttn">
+          <i class="fa-solid fa-circle-stop"></i>
+        </button>
+      </div>
+
+      <div class="pomo-clock">
+        <time>20:00</time>
+      </div>
+
+      <div class="pomo-schedule">
+        <button class="short-bttn">SHORT BREAK</button>
+
+        <div class="custom-dropdown">
+          <div class="custom-selected">POMODORO TIMER</div>
+          <div class="custom-options">
+            <div class="option" data-value="300">5 minutes</div>
+            <div class="option" data-value="600">10 minutes</div>
+            <div class="option" data-value="1500">25 minutes</div>
+            <div class="option" data-value="1800">30 minutes</div>
+            <div class="option" data-value="2700">45 minutes</div>
+          </div>
+        </div>
+
+        <button class="long-bttn">LONG BREAK</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </body>
+</html>

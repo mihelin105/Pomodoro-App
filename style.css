@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0px;
+  background-color: #c15a5a;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.start-bttn,
+.stop-bttn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.start-bttn i,
+.stop-bttn i {
+  font-size: 50px;
+}
+
+.pomo-clock {
+  font-family: "Press Start 2P", cursive;
+  font-size: 6rem;
+  padding: 50px;
+  color: white;
+}
+
+.pomo-schedule {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pomo-schedule button {
+  border: none;
+  background-color: rgba(243, 221, 221, 0.2);
+  padding: 20px;
+  border-radius: 10%;
+  color: white;
+  font-weight: 800;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*dropdown for pomo timer*/
+
+.custom-dropdown {
+  position: relative;
+  width: 220px;
+  user-select: none;
+}
+
+.custom-selected {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.custom-options {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+}
+
+.custom-options .option {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+
+.custom-options .option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
